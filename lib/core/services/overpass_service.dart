@@ -18,6 +18,7 @@ class OverpassService {
   static const _endpoints = [
     AppConfig.overpassUrl,
     AppConfig.overpassFallbackUrl,
+    AppConfig.overpassTertiaryUrl,
   ];
 
   OverpassService({
