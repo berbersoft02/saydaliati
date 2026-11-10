@@ -17,7 +17,7 @@ class AppConfig {
   /// Default search radius around the user in meters.
   static const int searchRadiusMeters = 5000;
 
-  static const List<int> radiusOptionsMeters = [2000, 5000, 10000];
+  static const List<int> radiusOptionsMeters = [2000, 5000, 10000, 15000];
 
   /// Tile server URL. Public OpenStreetMap tiles — please respect the
   /// tile usage policy (https://operations.osmfoundation.org/policies/tiles/).
@@ -32,6 +32,10 @@ class AppConfig {
   /// Fallback Overpass mirror.
   static const String overpassFallbackUrl =
       'https://overpass.kumi.systems/api/interpreter';
+
+  /// Tertiary Overpass mirror for high resilience.
+  static const String overpassTertiaryUrl =
+      'https://overpass.private.coffee/api/interpreter';
 
   /// User-Agent sent to Overpass and the tile server. Overpass rejects
   /// requests with a generic / empty User-Agent (HTTP 406).
