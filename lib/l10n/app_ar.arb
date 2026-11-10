@@ -1,0 +1,106 @@
+{
+    "@@locale": "ar",
+    "appName": "صيدليتي",
+    "appTagline": "ابحث عن أقرب صيدلية مفتوحة",
+
+    "nearbyPharmacies": "الصيدليات القريبة",
+    "search": "بحث",
+    "searchHint": "ابحث عن صيدلية أو حي...",
+    "openNow": "مفتوحة الآن",
+    "closed": "مغلقة",
+    "open24h": "مفتوحة 24/7",
+    "hoursUnknown": "ساعات العمل غير معروفة",
+    "getDirections": "الحصول على الاتجاهات",
+    "call": "اتصال",
+    "distance": "المسافة",
+    "km": "كم",
+    "m": "م",
+    "loading": "جاري التحميل...",
+    "noResults": "لم يتم العثور على صيدليات",
+    "locationDenied": "تم رفض إذن الموقع. يرجى تفعيله من الإعدادات.",
+    "enableLocation": "تفعيل الموقع",
+    "locationFallback": "الموقع الافتراضي (الجزائر العاصمة). فعّل GPS للنتائج القريبة.",
+    "activateGps": "تفعيل",
+    "settings": "الإعدادات",
+    "language": "اللغة",
+    "english": "الإنجليزية",
+    "french": "الفرنسية",
+    "arabic": "العربية",
+    "about": "حول التطبيق",
+    "version": "الإصدار",
+    "address": "العنوان",
+    "phone": "الهاتف",
+    "website": "الموقع الإلكتروني",
+    "openingHours": "ساعات العمل",
+    "rating": "التقييم",
+    "pharmacyOnDuty": "صيدلية المناوبة",
+    "yourLocation": "موقعك",
+    "searchArea": "ابحث في هذه المنطقة",
+    "filter": "تصفية",
+    "all": "الكل",
+    "openOnly": "المفتوحة فقط",
+    "directionsTo": "الاتجاهات إلى {name}",
+    "@directionsTo": {
+        "placeholders": {
+            "name": {"type": "String"}
+        }
+    },
+    "errorOccurred": "حدث خطأ. يرجى المحاولة مرة أخرى.",
+    "retry": "إعادة المحاولة",
+    "poweredBy": "مدعوم من OpenStreetMap",
+    "madeWith": "صُنع بحب في الجزائر",
+    "theme": "المظهر",
+    "themeSystem": "النظام",
+    "themeLight": "فاتح",
+    "themeDark": "داكن",
+    "searchRadius": "نطاق البحث",
+    "radiusKm": "{km} كم",
+    "@radiusKm": {
+        "placeholders": {
+            "km": {"type": "String"}
+        }
+    },
+    "favorites": "المفضلة",
+    "noFavorites": "لا توجد مفضلات بعد. اضغط على القلب لحفظ صيدلية.",
+    "recentSearches": "عمليات البحث الأخيرة",
+    "clearRecent": "مسح",
+    "wheelchairAccess": "إمكانية الوصول للكراسي المتحركة",
+    "wheelchairYes": "متاح",
+    "wheelchairNo": "غير متاح",
+    "wheelchairLimited": "وصول محدود",
+    "wheelchairUnknown": "غير معروف",
+    "noMapsApp": "لا يوجد تطبيق خرائط متاح",
+    "pharmaciesCount": "{count} صيدليات",
+    "@pharmaciesCount": {
+        "placeholders": {
+            "count": {"type": "int"}
+        }
+    },
+    "refresh": "تحديث",
+    "addFavorite": "إضافة إلى المفضلة",
+    "removeFavorite": "إزالة من المفضلة",
+    "operator": "المشغّل",
+    "dataSource": "بيانات الخريطة © مساهمو OpenStreetMap",
+    "unnamedPharmacy": "صيدلية",
+    "noOpenNearby": "لا توجد صيدليات مفتوحة قريبة. أوقف «المفتوحة فقط» أو وسّع نطاق البحث.",
+    "showAllPharmacies": "عرض الكل",
+    "copied": "تم النسخ",
+    "share": "مشاركة",
+    "sharePharmacyText": "{name}\n{address}\nhttps://www.openstreetmap.org/?mlat={lat}&mlon={lng}#map=17/{lat}/{lng}",
+    "@sharePharmacyText": {
+        "placeholders": {
+            "name": {"type": "String"},
+            "address": {"type": "String"},
+            "lat": {"type": "String"},
+            "lng": {"type": "String"}
+        }
+    },
+    "zoomIn": "تكبير",
+    "zoomOut": "تصغير",
+    "copyAddress": "نسخ العنوان",
+    "copyPhone": "نسخ الهاتف",
+    "includeUnknownHours": "تضمين الساعات غير المعروفة",
+    "includeUnknownHoursSubtitle": "مع «المفتوحة فقط»، أظهر أيضاً الصيدليات بدون ساعات عمل",
+    "filters": "عوامل التصفية",
+    "shareFailed": "تعذّرت المشاركة"
+}

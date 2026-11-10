@@ -1,0 +1,106 @@
+{
+    "@@locale": "en",
+    "appName": "Saydaliati",
+    "appTagline": "Find the nearest open pharmacy",
+
+    "nearbyPharmacies": "Nearby pharmacies",
+    "search": "Search",
+    "searchHint": "Search a pharmacy or area...",
+    "openNow": "Open now",
+    "closed": "Closed",
+    "open24h": "Open 24/7",
+    "hoursUnknown": "Hours unknown",
+    "getDirections": "Get directions",
+    "call": "Call",
+    "distance": "Distance",
+    "km": "km",
+    "m": "m",
+    "loading": "Loading...",
+    "noResults": "No pharmacies found",
+    "locationDenied": "Location permission denied. Please enable it in settings.",
+    "enableLocation": "Enable location",
+    "locationFallback": "Using default location (Algiers). Enable GPS for nearby results.",
+    "activateGps": "Enable",
+    "settings": "Settings",
+    "language": "Language",
+    "english": "English",
+    "french": "French",
+    "arabic": "Arabic",
+    "about": "About",
+    "version": "Version",
+    "address": "Address",
+    "phone": "Phone",
+    "website": "Website",
+    "openingHours": "Opening hours",
+    "rating": "Rating",
+    "pharmacyOnDuty": "Pharmacy on duty",
+    "yourLocation": "Your location",
+    "searchArea": "Search this area",
+    "filter": "Filter",
+    "all": "All",
+    "openOnly": "Open only",
+    "directionsTo": "Directions to {name}",
+    "@directionsTo": {
+        "placeholders": {
+            "name": {"type": "String"}
+        }
+    },
+    "errorOccurred": "An error occurred. Please try again.",
+    "retry": "Retry",
+    "poweredBy": "Powered by OpenStreetMap",
+    "madeWith": "Made with care in Algeria",
+    "theme": "Theme",
+    "themeSystem": "System",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "searchRadius": "Search radius",
+    "radiusKm": "{km} km",
+    "@radiusKm": {
+        "placeholders": {
+            "km": {"type": "String"}
+        }
+    },
+    "favorites": "Favorites",
+    "noFavorites": "No favorites yet. Tap the heart on a pharmacy to save it.",
+    "recentSearches": "Recent searches",
+    "clearRecent": "Clear",
+    "wheelchairAccess": "Wheelchair access",
+    "wheelchairYes": "Accessible",
+    "wheelchairNo": "Not accessible",
+    "wheelchairLimited": "Limited access",
+    "wheelchairUnknown": "Unknown",
+    "noMapsApp": "No maps app available",
+    "pharmaciesCount": "{count} pharmacies",
+    "@pharmaciesCount": {
+        "placeholders": {
+            "count": {"type": "int"}
+        }
+    },
+    "refresh": "Refresh",
+    "addFavorite": "Add to favorites",
+    "removeFavorite": "Remove from favorites",
+    "operator": "Operator",
+    "dataSource": "Map data © OpenStreetMap contributors",
+    "unnamedPharmacy": "Pharmacy",
+    "noOpenNearby": "No open pharmacies nearby. Try turning off “Open only” or increasing the search radius.",
+    "showAllPharmacies": "Show all",
+    "copied": "Copied",
+    "share": "Share",
+    "sharePharmacyText": "{name}\n{address}\nhttps://www.openstreetmap.org/?mlat={lat}&mlon={lng}#map=17/{lat}/{lng}",
+    "@sharePharmacyText": {
+        "placeholders": {
+            "name": {"type": "String"},
+            "address": {"type": "String"},
+            "lat": {"type": "String"},
+            "lng": {"type": "String"}
+        }
+    },
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "copyAddress": "Copy address",
+    "copyPhone": "Copy phone",
+    "includeUnknownHours": "Include unknown hours",
+    "includeUnknownHoursSubtitle": "When “Open only” is on, also show pharmacies without opening hours",
+    "filters": "Filters",
+    "shareFailed": "Could not share"
+}
