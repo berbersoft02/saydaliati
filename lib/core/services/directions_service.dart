@@ -6,19 +6,48 @@ import '../../models/pharmacy.dart';
 class DirectionsService {
   const DirectionsService();
 
-  Future<bool> openDirections(Pharmacy pharmacy) async {
+  static Uri buildGeoUri(Pharmacy pharmacy) {
     final lat = pharmacy.location.latitude;
     final lng = pharmacy.location.longitude;
     final name = Uri.encodeComponent(pharmacy.name);
+    return Uri.parse('geo:$lat,$lng?q=$name');
+  }
 
-    final geoUri = Uri.parse('geo:$lat,$lng?q=$name');
-    final gmapsUri = Uri.parse(
+  static Uri buildGoogleMapsUri(Pharmacy pharmacy) {
+    final lat = pharmacy.location.latitude;
+    final lng = pharmacy.location.longitude;
+    return Uri.parse(
       'https://www.google.com/maps/dir/?api=1'
       '&destination=$lat,$lng&travelmode=driving',
     );
-    final osmUri = Uri.parse(
+  }
+
+  static Uri buildOsmUri(Pharmacy pharmacy) {
+    final lat = pharmacy.location.latitude;
+    final lng = pharmacy.location.longitude;
+    return Uri.parse(
       'https://www.openstreetmap.org/directions?to=$lat%2C$lng',
     );
+  }
+
+  static Uri buildTelUri(String phone) {
+    return Uri(scheme: 'tel', path: phone.trim());
+  }
+
+  static Uri? normalizeWebsiteUri(String url) {
+    var normalized = url.trim();
+    if (normalized.isEmpty) return null;
+    if (!normalized.startsWith('http://') &&
+        !normalized.startsWith('https://')) {
+      normalized = 'https://$normalized';
+    }
+    return Uri.tryParse(normalized);
+  }
+
+  Future<bool> openDirections(Pharmacy pharmacy) async {
+    final geoUri = buildGeoUri(pharmacy);
+    final gmapsUri = buildGoogleMapsUri(pharmacy);
+    final osmUri = buildOsmUri(pharmacy);
 
     if (await canLaunchUrl(geoUri)) {
       return launchUrl(geoUri);
@@ -33,8 +62,7 @@ class DirectionsService {
   }
 
   Future<bool> callPhone(String phone) async {
-    final cleaned = phone.trim();
-    final uri = Uri(scheme: 'tel', path: cleaned);
+    final uri = buildTelUri(phone);
     if (await canLaunchUrl(uri)) {
       return launchUrl(uri);
     }
@@ -42,12 +70,7 @@ class DirectionsService {
   }
 
   Future<bool> openWebsite(String url) async {
-    var normalized = url.trim();
-    if (!normalized.startsWith('http://') &&
-        !normalized.startsWith('https://')) {
-      normalized = 'https://$normalized';
-    }
-    final uri = Uri.tryParse(normalized);
+    final uri = normalizeWebsiteUri(url);
     if (uri == null) return false;
     if (await canLaunchUrl(uri)) {
       return launchUrl(uri, mode: LaunchMode.externalApplication);
