@@ -13,11 +13,11 @@ void main() {
         radiusMeters: 5000,
       );
       final list = [
-        Pharmacy(
+        const Pharmacy(
           id: '1',
           name: 'A',
           address: '',
-          location: const LatLng(36.75, 3.05),
+          location: LatLng(36.75, 3.05),
         ),
       ];
       expect(cache.get(key), isNull);

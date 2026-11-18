@@ -95,8 +95,6 @@ class OpeningHoursService {
 
     // Day part + optional time part
     // Examples: "Mo-Fr 08:00-20:00", "Su off", "Sa 09:00-13:00"
-    final lower = r.toLowerCase();
-
     // Extract days token(s) at the start.
     final dayMatch = RegExp(
       r'^((?:(?:mo|tu|we|th|fr|sa|su)(?:-(?:mo|tu|we|th|fr|sa|su))?(?:,\s*)?)+|ph|weekdays|weekends)\s*(.*)$',

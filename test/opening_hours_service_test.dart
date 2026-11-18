@@ -122,7 +122,7 @@ void main() {
       final sunday = DateTime(2026, 7, 19, 10, 0);
       final monday = DateTime(2026, 7, 13, 10, 0);
       final tuesday = DateTime(2026, 7, 14, 10, 0);
-      final spec = 'Sa-Mo 09:00-18:00';
+      const spec = 'Sa-Mo 09:00-18:00';
       expect(service.evaluate(spec, at: saturday), OpenEvaluation.open);
       expect(service.evaluate(spec, at: sunday), OpenEvaluation.open);
       expect(service.evaluate(spec, at: monday), OpenEvaluation.open);
